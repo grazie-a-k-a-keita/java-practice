@@ -1,0 +1,33 @@
+{
+  "name": "JavaPractice",
+  "image": "mcr.microsoft.com/devcontainers/java:1-21-bullseye",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "none",
+      "installMaven": "false",
+      "installGradle": "true"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "redhat.telemetry.enabled": true,
+        "[java]": {
+          "editor.defaultFormatter": "redhat.java"
+        },
+        "[json]": {
+          "editor.defaultFormatter": "esbenp.prettier-vscode"
+        }
+      },
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "sleistner.vscode-fileutils",
+        "vscjava.vscode-gradle",
+        "mechatroner.rainbow-csv",
+        "vscjava.vscode-java-pack",
+        "mhutchie.git-graph",
+        "eamodio.gitlens"
+      ]
+    }
+  }
+}
