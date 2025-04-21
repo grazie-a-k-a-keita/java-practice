@@ -1,8 +1,10 @@
 package org.example;
 
+import org.example.service.DrinkVendingMachine;
+
 public class App {
     public static void main(String[] args) {
-        VendingMachine vendingMachine = new VendingMachine();
-        vendingMachine.execute();
+        DrinkVendingMachine drinkVendingMachine = new DrinkVendingMachine();
+        drinkVendingMachine.initialization();
     }
 }

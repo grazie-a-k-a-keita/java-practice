@@ -1,5 +1,5 @@
 {
-  "name": "JavaPractice",
+  "name": "Java VendingMachine",
   "image": "mcr.microsoft.com/devcontainers/java:1-21-bullseye",
   "features": {
     "ghcr.io/devcontainers/features/java:1": {
@@ -26,7 +26,9 @@
         "mechatroner.rainbow-csv",
         "vscjava.vscode-java-pack",
         "mhutchie.git-graph",
-        "eamodio.gitlens"
+        "eamodio.gitlens",
+        "chunsen.bracket-select",
+        "streetsidesoftware.code-spell-checker"
       ]
     }
   }

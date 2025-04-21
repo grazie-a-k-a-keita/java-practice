@@ -1,24 +1,24 @@
-package org.example;
+package org.example.model;
 
-public class Drink {
+public abstract class Product {
   /**
-   * ドリンクID
+   * 商品ID
    */
   private int id;
   /**
-   * ドリンク名
+   * 商品名
    */
   private String name;
   /**
-   * ドリンク価格
+   * 商品価格
    */
   private int price;
   /**
-   * ドリンク在庫数
+   * 在庫数
    */
   private int stock;
 
-  public Drink(int id, String name, int price, int stock) {
+  public Product(int id, String name, int price, int stock) {
     this.id = id;
     this.name = name;
     this.price = price;
@@ -40,4 +40,10 @@ public class Drink {
   public int getStock() {
     return stock;
   }
+
+  public void setStock(int stock) {
+    this.stock = stock;
+  }
+
+  abstract public void reduceStock();
 }
